@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/dist/style.css">
+  <link rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="./images/favicon-32x32.png"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+    rel="stylesheet"
+    />
+  <link rel="stylesheet" href="/dist/style.css" />
   
   <title>Frontend Mentor | Easybank landing page</title>
 
@@ -17,28 +25,37 @@
   </style>
 </head>
 <body>
-
   <header class="header">
-    <div class="overlay"></div>
+    <div class="overlay has-fade"></div>
     
-    <nav class="flex flex-jc-sb flex-ai-c">
+    <nav class="container flex flex-jc-sb flex-ai-c">
       <a href="/" class="header__logo">
         <img src="images/logo.svg" alt="Easybank" />
       </a>
 
-      <a id="btnHamburger" href="#" class="header__menu hide-for-desktop">
+      <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
         <span></span>
         <span></span>
         <span></span>
       </a>
 
 
-      <div class="header__links">
-        <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a><a href="#">Blog</a><a href="#">Careers</a>
+      <div class="header__links hide-for-mobile">
+        <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a>
+        <a href="#">Blog</a><a href="#">Careers</a>
       </div>
 
-      <a href="#" class="button header__cta hide-for-mobile">Request Invite</a>
+      <a href="#" class="button header__cta hide-for-mobile"
+      >Request Invite</a>
     </nav>
+
+    <div class="header__menu has-fade">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Blog</a>
+        <a href="">Careers</a>
+    </div>
   </header>
 
 
